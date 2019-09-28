@@ -17,8 +17,8 @@ public class ContaPoupanca extends ContaBancaria {
             saldo -= valor;
             System.out.println("Valor sacado com sucesso!");
         }else if (valor > saldo && valor <= saldo +limite){
-                saldo =0;
                 limite -= (valor - saldo);
+                saldo =0;
                 System.out.println("Valor sacado com sucesso!");
         } else System.out.println("Valor solicitado maior que o permitido");
     }
